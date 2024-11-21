@@ -7,6 +7,7 @@ import { Demo } from './pages/Demo';
 import { About } from './pages/About';
 import { initializeGmail } from './lib/gmailInit';
 import { initializeCalendar } from './lib/calendarService';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
 
 function App() {
   const [isInitializing, setIsInitializing] = useState(true);
@@ -62,6 +63,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/demo" element={<Demo />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );

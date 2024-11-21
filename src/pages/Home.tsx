@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ArrowRight, LineChart, ChevronDown, ArrowLeft, Send, Play } from 'lucide-react';
+import { ArrowRight} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { Navbar } from '../components/Navbar';
 import { InsightSection } from '../components/InsightSection';
 import { ProblemSolution } from '../components/ProblemSolution';
 import { BackgroundText } from '../components/BackgroundText';
-import { VideoSection } from '../components/VideoSection';
 
 export const Home = () => {
   const [heroRef, heroInView] = useInView({
