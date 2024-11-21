@@ -72,27 +72,20 @@ export const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative w-[120%] -ml-[10%]"
             >
-              <div className="relative w-full pb-[80%] bg-white rounded-[2.5rem] overflow-hidden shadow-xl">
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
+              <div className="relative w-full pb-[56.25%] bg-white rounded-xl overflow-hidden shadow-xl">
+                <iframe
                   className="absolute inset-0 w-full h-full object-cover"
-                >
-                  <source 
-                    src="ConstroMan video.mp4" 
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                  src="https://www.youtube.com/embed/WK5gk-CmeBQ?autoplay=1&mute=1&loop=1&playlist=WK5gk-CmeBQ"
+                  title="ConstroMan Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </motion.div>
           </div>
         </div>
       </motion.section>
-
-      <VideoSection />
 
       <InsightSection />
       <ProblemSolution />
