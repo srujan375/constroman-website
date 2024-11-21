@@ -24,15 +24,12 @@ export const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="relative">
-            <div className="aspect-[4/5] w-full">
-              <img
-                src="public\images\Papa.jpg"
-                alt="Company Founder"
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10" />
+          <div className="space-y-4">
+            <h2 className="text-3xl font-bold text-gray-900">Rajesh Jujare</h2>
+            <div className="w-16 h-1 bg-teal-500 rounded-full" />
+            <p className="text-lg text-gray-600">
+              Founder & Principal Consultant
+            </p>
           </div>
 
           <div className="space-y-8 text-lg">
