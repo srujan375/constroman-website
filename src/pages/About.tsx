@@ -27,8 +27,8 @@ export const About = () => {
           <div className="relative">
             <div className="aspect-[4/5] w-full">
               <img
-                src="Papa.jpg"
-                alt="Rajesh Jujare"
+                src="public\images\Papa.jpg"
+                alt="Company Founder"
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
             </div>
