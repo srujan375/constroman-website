@@ -8,6 +8,7 @@ import { About } from './pages/About';
 import { initializeGmail } from './lib/gmailInit';
 import { initializeCalendar } from './lib/calendarService';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { Footer } from './components/Footer';
 
 function App() {
   const [isInitializing, setIsInitializing] = useState(true);

@@ -74,7 +74,7 @@ export const Home = () => {
               <div className="relative w-full pb-[56.25%] bg-white rounded-xl overflow-hidden shadow-xl">
                 <iframe
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="https://www.youtube.com/embed/WK5gk-CmeBQ?autoplay=1&mute=1&loop=1&playlist=WK5gk-CmeBQ"
+                  src="https://www.youtube.com/embed/ihZTK0pCHO4?autoplay=1&mute=1&loop=1&playlist=ihZTK0pCHO4"
                   title="ConstroMan Demo"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
