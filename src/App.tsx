@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Home } from './pages/Home';
@@ -9,6 +9,9 @@ import { initializeGmail } from './lib/gmailInit';
 import { initializeCalendar } from './lib/calendarService';
 import { PrivacyPolicy } from './components/PrivacyPolicy';
 import { Footer } from './components/Footer';
+import { TermsAndConditions } from './components/TermsAndConditions';
+import { RefundPolicy } from './components/RefundPolicy';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 function App() {
   const [isInitializing, setIsInitializing] = useState(true);
@@ -57,16 +60,21 @@ function App() {
   }
 
   return (
-    <Router>
-      <Toaster position="top-right" />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/demo" element={<Demo />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <Toaster />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/demo" element={<Demo />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </ErrorBoundary>
   );
 }
 

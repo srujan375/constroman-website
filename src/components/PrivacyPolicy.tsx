@@ -12,41 +12,36 @@ export const PrivacyPolicy = () => {
       
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Data Collection and Usage</h2>
-        <p className="mb-4">When you use ConstroMan's demo scheduling service, we collect and process the following information:</p>
+        <p className="mb-4">When you use ConstroMan's services, we collect and process the following information:</p>
         <ul className="list-disc pl-6 mb-4">
-          <li>Name</li>
+          <li>Name and contact information</li>
           <li>Email address</li>
-          <li>Company name</li>
-          <li>Selected demo date and time</li>
-          <li>Any additional message you provide</li>
-        </ul>
-        <p>This information is used solely for:</p>
-        <ul className="list-disc pl-6">
-          <li>Scheduling and managing your demo session</li>
-          <li>Creating calendar events</li>
-          <li>Sending confirmation emails</li>
-          <li>Providing demo-related communications</li>
+          <li>Company details</li>
+          <li>Payment information (processed securely through Razorpay)</li>
+          <li>Usage data and analytics</li>
+          <li>Communication preferences</li>
         </ul>
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Google Calendar and Gmail Integration</h2>
-        <p className="mb-4">Our application integrates with Google Calendar and Gmail to provide scheduling functionality. When you authorize access:</p>
+        <h2 className="text-2xl font-semibold mb-4">Payment Processing</h2>
+        <p className="mb-4">Our payment processing is handled securely through Razorpay. When processing payments:</p>
         <ul className="list-disc pl-6">
-          <li>We only request necessary permissions to create calendar events and send confirmation emails</li>
-          <li>We do not store your Google credentials</li>
-          <li>We do not access any other data from your Google account</li>
-          <li>Calendar events and emails are created only with your explicit consent</li>
+          <li>All transactions are encrypted and processed securely</li>
+          <li>Payment information is handled directly by Razorpay</li>
+          <li>We do not store your complete payment details</li>
+          <li>Transaction history is maintained for legal and accounting purposes</li>
         </ul>
       </section>
 
       <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Data Storage and Security</h2>
-        <p className="mb-4">Your data is stored securely in our database with the following practices:</p>
+        <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
+        <p className="mb-4">Your data is protected using industry-standard security measures:</p>
         <ul className="list-disc pl-6">
-          <li>All data is encrypted in transit and at rest</li>
-          <li>Access to data is strictly controlled and monitored</li>
-          <li>We retain your data only for the duration necessary to provide our services</li>
+          <li>SSL/TLS encryption for all data transmission</li>
+          <li>Regular security audits and updates</li>
+          <li>Restricted access to personal information</li>
+          <li>Compliance with data protection regulations</li>
         </ul>
       </section>
 
@@ -54,21 +49,25 @@ export const PrivacyPolicy = () => {
         <h2 className="text-2xl font-semibold mb-4">Your Rights</h2>
         <p className="mb-4">You have the right to:</p>
         <ul className="list-disc pl-6">
-          <li>Request access to your personal data</li>
-          <li>Request correction of your personal data</li>
-          <li>Request deletion of your personal data</li>
-          <li>Withdraw your consent at any time</li>
+          <li>Access your personal data</li>
+          <li>Correct inaccurate data</li>
+          <li>Request data deletion</li>
+          <li>Withdraw consent for data processing</li>
+          <li>Receive a copy of your data</li>
+          <li>Object to data processing</li>
         </ul>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-        <p>For any privacy-related questions or requests, please contact us at:</p>
-        <p className="mt-2">
-          <a href="mailto:privacy@constroman.com" className="text-teal-600 hover:text-teal-700">
-            constroman@gmail.com
-          </a>
-        </p>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
+        <p className="mb-4">For privacy-related inquiries, contact us at:</p>
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <p>ConstroMan</p>
+          <p>H-901, Treasure Park Soc</p>
+          <p>Pune, Maharashtra 411057</p>
+          <p>Email:constromanai@gmail.com</p>
+          <p>Phone: +91 95118 76403</p>
+        </div>
       </section>
     </motion.div>
   );
