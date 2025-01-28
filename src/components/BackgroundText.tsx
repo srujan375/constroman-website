@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const BackgroundText = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -15,7 +15,7 @@ export const BackgroundText = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
       <div 
-        className="absolute left-1/3 -translate-x-1/2 top-[-150px] opacity-[0.03] transition-transform duration-0"
+        className="absolute left-1/3 -translate-x-1/2 top-[-150px] opacity-[0.08] transition-transform duration-0"
         style={{
           transform: `translateY(-${scrollPosition * 0.5}px)`,
         }}

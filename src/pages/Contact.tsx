@@ -1,23 +1,9 @@
-import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Send } from 'lucide-react';
+import { ArrowLeft, MapPin, Mail, Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo } from '../components/Logo';
 
 export const Contact = () => {
-  const [formState, setFormState] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formState);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       <nav className="w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-6 border-b border-gray-100">
@@ -37,78 +23,70 @@ export const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
+          className="bg-white/60 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100/50"
         >
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-light mb-4">Get in Touch</h1>
-            <p className="text-gray-600">Schedule a demo or ask us anything about ConstroMan</p>
+            <h1 className="text-3xl font-light mb-4">Contact Us</h1>
+            <p className="text-gray-600">Get in touch with us for any inquiries about ConstroMan</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={formState.name}
-                  onChange={(e) => setFormState(prev => ({ ...prev, name: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                  required
-                />
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Office Address */}
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-100/70 p-3 rounded-lg">
+                <MapPin className="w-6 h-6 text-teal-600" />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={formState.email}
-                  onChange={(e) => setFormState(prev => ({ ...prev, email: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                  required
-                />
+                <h3 className="font-medium text-lg mb-2">Office Address</h3>
+                <p className="text-gray-600">
+                  H-901, Treasure Park Soc<br />
+                  Pune, Maharashtra, 411009<br />
+                  India
+                </p>
               </div>
             </div>
 
-            <div>
-              <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                Company Name
-              </label>
-              <input
-                type="text"
-                id="company"
-                value={formState.company}
-                onChange={(e) => setFormState(prev => ({ ...prev, company: e.target.value }))}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-              />
+            {/* Email */}
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-100/70 p-3 rounded-lg">
+                <Mail className="w-6 h-6 text-teal-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-lg mb-2">Email Us</h3>
+                <a href="mailto:constromanai@gmail.com" className="text-teal-600 hover:text-teal-700">
+                  [constromanai@gmail.com]
+                </a>
+              </div>
             </div>
 
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                value={formState.message}
-                onChange={(e) => setFormState(prev => ({ ...prev, message: e.target.value }))}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                required
-              />
+            {/* Phone */}
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-100/70 p-3 rounded-lg">
+                <Phone className="w-6 h-6 text-teal-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-lg mb-2">Call Us</h3>
+                <a href="tel:+91 95118 76403" className="text-teal-600 hover:text-teal-700">
+                  [+91 95118 76403]
+                </a>
+              </div>
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-teal-600 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-teal-200"
-            >
-              Send Message
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
+            {/* Business Hours */}
+            <div className="flex items-start gap-4">
+              <div className="bg-teal-100/70 p-3 rounded-lg">
+                <Clock className="w-6 h-6 text-teal-600" />
+              </div>
+              <div>
+                <h3 className="font-medium text-lg mb-2">Business Hours</h3>
+                <p className="text-gray-600">
+                  Monday - Friday: [9:00 AM - 6:00 PM]<br />
+                  Saturday: [10:00 AM - 2:00 PM]<br />
+                  Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>

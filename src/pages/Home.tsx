@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ArrowRight} from 'lucide-react';
@@ -29,26 +28,26 @@ export const Home = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-teal-50/50 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={heroInView ? { y: 0, opacity: 1 } : { y: 20, opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-left relative z-10"
+              className="text-center lg:text-left relative z-10"
             >
               <div className="inline-block px-4 py-2 bg-teal-100 rounded-full text-teal-700 text-sm font-bold mb-2">
                 Smart Construction Analytics
               </div>
-              <h1 className="text-4xl sm:text-5xl font-medium text-gray-700 mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-gray-700 mb-6 leading-tight">
                 Constructing the Future
                 <span className="text-teal-700 font-medium block mt-4">Business Intelligence:</span>
-                <span className="text-teal-600 font-small font-light mt-2">through automated data analytics in Construction</span>
+                <span className="text-teal-600 text-2xl sm:text-3xl lg:text-4xl font-light mt-2">through automated data analytics in Construction</span>
               </h1>
-              <p className="text-lg text-gray-600 mb-8  leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 Leverage advanced AI-powered analytics to understand your construction data better. 
                 Make informed decisions with clear visualizations and data-driven insights to optimize and grow your business even faster.
               </p>
-              <div className="flex gap-4 mt-8">
+              <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
                 <Link
                   to="/demo"
                   className="bg-teal-600 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-teal-700 transition-colors inline-flex items-center gap-2 shadow-lg shadow-teal-200"

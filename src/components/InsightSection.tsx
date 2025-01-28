@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { LineChart, PieChart, BarChart2, PercentCircle } from 'lucide-react';
@@ -77,13 +76,13 @@ export const InsightSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="group bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 relative overflow-hidden"
+              className="group bg-white/60 backdrop-blur-sm rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100/50 relative overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50/40 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50/20 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110" />
               
               <div className="relative">
                 <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                  <div className="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center shadow-sm">
+                  <div className="w-14 h-14 bg-teal-50/70 rounded-xl flex items-center justify-center shadow-sm">
                     <item.icon className="w-7 h-7 text-teal-600" />
                   </div>
                 </div>

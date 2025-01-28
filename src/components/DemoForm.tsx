@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import DatePicker from 'react-datepicker';
-import { format, setHours, setMinutes } from 'date-fns';
 import toast from 'react-hot-toast';
 import { Calendar, Clock } from 'lucide-react';
 import { submitDemoRequest } from '../lib/supabase';
@@ -75,7 +74,7 @@ export const DemoForm = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
+      className="bg-white/60 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12 border border-gray-100/50"
     >
       <div className="text-center mb-12">
         <h1 className="text-3xl font-light mb-4">Schedule a Demo</h1>

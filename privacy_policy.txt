@@ -1,0 +1,41 @@
+Privacy Policy
+
+Data Collection and Usage
+When you use ConstroMan's services, we collect and process the following information:
+- Name and contact information
+- Email address
+- Company details
+- Payment information (processed securely through Razorpay)
+- Usage data and analytics
+- Communication preferences
+
+Payment Processing
+Our payment processing is handled securely through Razorpay. When processing payments:
+- All transactions are encrypted and processed securely
+- Payment information is handled directly by Razorpay
+- We do not store your complete payment details
+- Transaction history is maintained for legal and accounting purposes
+
+Data Security
+Your data is protected using industry-standard security measures:
+- SSL/TLS encryption for all data transmission
+- Regular security audits and updates
+- Restricted access to personal information
+- Compliance with data protection regulations
+
+Your Rights
+You have the right to:
+- Access your personal data
+- Correct inaccurate data
+- Request data deletion
+- Withdraw consent for data processing
+- Receive a copy of your data
+- Object to data processing
+
+Contact Information
+For privacy-related inquiries, contact us at:
+ConstroMan
+H-901, Treasure Park Soc
+Pune, Maharashtra 411057
+Email: constromanai@gmail.com
+Phone: +91 95118 76403 

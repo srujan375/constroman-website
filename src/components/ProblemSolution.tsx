@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { AlertTriangle, TrendingUp, Clock, CheckCircle2 } from 'lucide-react';
@@ -50,18 +49,19 @@ export const ProblemSolution = () => {
           <p className="text-xl text-gray-600">Transform construction challenges into opportunities with ConstroMan</p>
         </motion.div>
         
-        <div className="grid grid-flow-col auto-cols-fr gap-4 overflow-x-auto pb-4">          {problems.map((item, index) => (
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+          {problems.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-className="relative bg-white rounded-2xl shadow-md p-6 overflow-hidden group hover:-translate-y-1 hover:shadow-xl transition-all duration-300 min-w-[300px]"
+              className="relative bg-white/60 backdrop-blur-sm rounded-2xl shadow-md p-6 overflow-hidden group hover:-translate-y-1 hover:shadow-xl transition-all duration-300 border border-gray-100/50"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-150" />
               <div className="relative">
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="p-3 bg-red-50 rounded-lg">
+                  <div className="p-3 bg-red-50/70 rounded-lg">
                     <item.icon className="w-6 h-6 text-red-500" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{item.problem}</h3>

@@ -1,0 +1,26 @@
+Terms and Conditions
+
+1. Service Usage
+By using ConstroMan's services, you agree to:
+- Provide accurate and complete information
+- Maintain the security of your account credentials
+- Use the service in compliance with applicable laws
+- Not misuse or attempt to manipulate the service
+
+2. Payment Terms
+- All payments are processed securely through Razorpay
+- Prices are subject to change with prior notice
+- Subscription fees are billed according to the chosen plan
+- Taxes will be added as applicable under Indian law
+
+3. Intellectual Property
+All content and materials available through ConstroMan are protected by intellectual property rights. Users may not:
+- Copy or reproduce any part of the service without permission
+- Modify or create derivative works
+- Remove any copyright or proprietary notices
+
+4. Limitation of Liability
+ConstroMan shall not be liable for:
+- Indirect or consequential damages
+- Loss of data or business interruption
+- Issues arising from third-party services 
