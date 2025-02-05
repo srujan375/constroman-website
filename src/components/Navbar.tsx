@@ -39,6 +39,20 @@ export const Navbar = () => {
           <Link to="/about" className="text-sm text-gray-600 hover:text-teal-600 transition-colors">
             About Us
           </Link>
+          <div className="flex items-center gap-2">
+            <a 
+              href="https://www.constroman.co.in/" 
+              className="text-sm text-teal-600 hover:text-teal-700 transition-colors px-6 py-1.5 border border-teal-600 rounded-md"
+            >
+              Login
+            </a>
+            <a 
+              href="https://www.constroman.co.in/company-signup" 
+              className="text-sm text-white bg-teal-600 hover:bg-teal-700 transition-colors px-6 py-1.5 rounded-md"
+            >
+              Sign Up
+            </a>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -59,6 +73,22 @@ export const Navbar = () => {
           <Link to="/about" className="text-sm text-gray-600 hover:text-teal-600 transition-colors" onClick={() => setIsMenuOpen(false)}>
             About Us
           </Link>
+          <div className="flex items-center gap-2">
+            <a 
+              href="https://www.constroman.co.in/" 
+              className="text-sm text-teal-600 hover:text-teal-700 transition-colors px-6 py-1.5 border border-teal-600 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Login
+            </a>
+            <a 
+              href="https://www.constroman.co.in/company-signup" 
+              className="text-sm text-white bg-teal-600 hover:bg-teal-700 transition-colors px-6 py-1.5 rounded-md"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Sign Up
+            </a>
+          </div>
         </div>
       </div>
     </nav>
