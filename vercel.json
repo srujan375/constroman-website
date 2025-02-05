@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/Logo-removebg.png",
+      "dest": "/public/Logo-removebg.png"
+    }
+  ]
+}
